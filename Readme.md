@@ -8,13 +8,16 @@ To build the game, run the following command:
 
 Example of the build command in Linux (Ubuntu 22):
 ```bash
-gcc -I./lib -L./lib -w -lraylib -lGL -lm -lpthread -lX11 -lXrandr -lXinerama -lXi -lXcursor ./main.c -o main
+gcc ./main.c -I./lib -I./include -w -lraylib -lGL -lm -lpthread -lX11 -lXrandr -lXinerama -lXi -lXcursor -o main
 ```
 
 Example of the build command in macOS:
 ```bash
 clang -I./include -L./lib -w -lraylib -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo ./main.c -o main
 ```
+
+
+## To build and run use these comands:
 
 ```bash
 make
